@@ -1,0 +1,29 @@
+{
+  "name": "idealista-telegram-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "NODE_ENV=production pm2 start ./src/app.js --name idealista-scrap-telegram-bot",
+    "dev": "pm2 start ./src/app.js --watch --name dev-idealista-scrap-telegram-bot",
+    "dev-node": "node ./src/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "crawlee": "^3.1.4",
+    "dotenv": "^16.0.0",
+    "playwright": "^1.29.1",
+    "pm2": "^5.2.2",
+    "telegraf": "^4.7.0",
+    "typescript": "^4.9.4"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.45",
+    "prettier": "^2.8.1",
+    "ts-node": "^10.9.1"
+  }
+}
